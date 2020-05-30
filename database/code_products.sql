@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 30, 2020 at 11:46 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.6
+-- Host: localhost
+-- Generation Time: May 30, 2020 at 01:22 PM
+-- Server version: 10.3.16-MariaDB
+-- PHP Version: 7.3.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -65,18 +66,9 @@ CREATE TABLE `rating` (
 --
 
 INSERT INTO `rating` (`sNo`, `email`, `product_id`, `rating`) VALUES
-(1, '', 3, 1),
-(2, '', 3, 1),
-(3, 'kodimelarathnam@gmail.com', 3, 1),
-(4, 'kodimelarathnam@gmail.com', 3, 1),
-(5, 'kodimelarathnam@gmail.com', 3, 3),
-(6, 'kodimelarathnam@gmail.com', 3, 2),
-(7, 'kodimelarathnam@gmail.com', 3, 2),
-(8, 'kodimelarathnam@gmail.com', 3, 2),
-(9, 'kodimelarathnam@gmail.com', 3, 2),
-(10, 'kodimelarathnam@gmail.com', 1, 1),
-(11, 'kodimelarathnam@gmail.com', 1, 1),
-(12, 'kodimelarathnam@gmail.com', 5, 1);
+(1, 'hanuman@gmail.com', 1, 4),
+(2, 'hanuman@gmail.com', 2, 1),
+(3, 'kalyan@gmail.com', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -96,17 +88,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`sNo`, `Name`, `email`, `password`) VALUES
-(1, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(2, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(3, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(4, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(5, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(6, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(7, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(8, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(9, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(10, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc'),
-(11, 'Vamsi Krishna Kodimela', 'kodimelarathnam@gmail.com', 'ac1ea6195538d4448b6a881bcd19c2fc');
+(1, 'hanuman', 'hanuman@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b'),
+(2, 'kalyan', 'hanuman@gmail.com', 'ece7f89ed99289d5692e47660b97a7ca'),
+(3, 'kalyan', 'kalyan@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b');
 
 --
 -- Indexes for dumped tables
@@ -144,13 +128,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `rating`
 --
 ALTER TABLE `rating`
-  MODIFY `sNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `sNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `sNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `sNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
